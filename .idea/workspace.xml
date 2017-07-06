@@ -29,28 +29,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestBot.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test/TestBot.java">
+      <file leaf-file-name="MessageConstructor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/MessageConstructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="23" column="64" lean-forward="true" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            <state relative-caret-position="470">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="method#showTestText#0;class#TestBot#0" expanded="false" />
-                <element signature="method#showTestReplyKeyboard#0;class#TestBot#0" expanded="false" />
-                <element signature="e#2542#2550#0" expanded="true" />
-                <element signature="e#2996#3004#0" expanded="true" />
+                <element signature="method#getSendMessage#1;class#MessageConstructor#0" expanded="false" />
+                <element signature="method#getSendMessage#2;class#MessageConstructor#0" expanded="false" />
+                <element signature="method#getSendMessage#3;class#MessageConstructor#0" expanded="false" />
+                <element signature="method#getSendMessage#4;class#MessageConstructor#0" expanded="false" />
+                <element signature="method#getSendMessage#5;class#MessageConstructor#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReplyKeyboardConstructor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReplyKeyboardConstructor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/ReplyKeyboardConstructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="593">
+              <caret line="60" column="112" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="112" />
               <folding>
                 <element signature="method#getKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
                 <element signature="method#setButtonsInRow#0;class#ReplyKeyboardConstructor#0" expanded="false" />
@@ -61,12 +60,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KeyboardPattern.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/opentoolkit/patterns/KeyboardPattern.java">
+      <file leaf-file-name="InlineKeyboardConstructor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/InlineKeyboardConstructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="433">
+              <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getKeyboard#3;class#InlineKeyboardConstructor#0" expanded="false" />
+                <element signature="e#1512#1540#0" expanded="true" />
+                <element signature="method#removeSetCallBackData#0;class#InlineKeyboardConstructor#0" expanded="false" />
+                <element signature="method#getPatternByButtonsAtLine#0;class#InlineKeyboardConstructor#0" expanded="false" />
+                <element signature="method#setButtonsInRow#0;class#InlineKeyboardConstructor#0" expanded="false" />
+                <element signature="e#3169#3191#0" expanded="true" />
+                <element signature="method#getKeyboard#4;class#InlineKeyboardConstructor#0" expanded="false" />
+                <element signature="method#getKeyboard#5;class#InlineKeyboardConstructor#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/opentoolkit/patterns/KeyboardPattern.java" />
         <option value="$PROJECT_DIR$/src/opentoolkit/Constructors/ReplyKeyboardConstructor.java" />
         <option value="$PROJECT_DIR$/src/opentoolkit/Constructors/ButtonTool.java" />
-        <option value="$PROJECT_DIR$/src/opentoolkit/Constructors/InlineKeyboardConstructor.java" />
         <option value="$PROJECT_DIR$/src/Test/TestBot.java" />
+        <option value="$PROJECT_DIR$/src/opentoolkit/Constructors/InlineKeyboardConstructor.java" />
       </list>
     </option>
   </component>
@@ -153,6 +162,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,8 +250,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -706,11 +715,12 @@
       <workItem from="1499321587520" duration="4360000" />
       <workItem from="1499330478146" duration="4857000" />
       <workItem from="1499335995196" duration="37000" />
+      <workItem from="1499336985841" duration="1889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35179000" />
+    <option name="totallyTimeSpent" value="37068000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,6 +733,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -765,7 +776,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="64" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -788,6 +799,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#getSendMessage#1;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#2;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#3;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#4;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#5;class#MessageConstructor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1031,12 +1046,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/TestBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#showTestText#0;class#TestBot#0" expanded="false" />
+            <element signature="method#showTestReplyKeyboard#0;class#TestBot#0" expanded="false" />
+            <element signature="e#2542#2550#0" expanded="true" />
+            <element signature="e#2996#3004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/ButtonTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="440">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#removeSetButtons#0;class#ButtonTool#0" expanded="false" />
+            <element signature="method#completeLines#0;class#ButtonTool#0" expanded="false" />
+            <element signature="method#buttonsInUncompleteLine#0;class#ButtonTool#0" expanded="false" />
+            <element signature="method#getButtonsAtLine#0;class#ButtonTool#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1049,52 +1083,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/ReplyKeyboardConstructor.java">
+    <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/MessageConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="470">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <element signature="method#getKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
-            <element signature="method#setButtonsInRow#0;class#ReplyKeyboardConstructor#0" expanded="false" />
-            <element signature="method#AddContactRequestInKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
-            <element signature="method#AddLocationRequestInKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#1;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#2;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#3;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#4;class#MessageConstructor#0" expanded="false" />
+            <element signature="method#getSendMessage#5;class#MessageConstructor#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/InlineKeyboardConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="433">
+          <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getKeyboard#3;class#InlineKeyboardConstructor#0" expanded="false" />
             <element signature="e#1512#1540#0" expanded="true" />
+            <element signature="method#removeSetCallBackData#0;class#InlineKeyboardConstructor#0" expanded="false" />
+            <element signature="method#getPatternByButtonsAtLine#0;class#InlineKeyboardConstructor#0" expanded="false" />
+            <element signature="method#setButtonsInRow#0;class#InlineKeyboardConstructor#0" expanded="false" />
             <element signature="e#3169#3191#0" expanded="true" />
+            <element signature="method#getKeyboard#4;class#InlineKeyboardConstructor#0" expanded="false" />
+            <element signature="method#getKeyboard#5;class#InlineKeyboardConstructor#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/MessageConstructor.java">
+    <entry file="file://$PROJECT_DIR$/src/opentoolkit/Constructors/ReplyKeyboardConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="593">
+          <caret line="60" column="112" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="112" />
           <folding>
-            <element signature="method#getSendMessage#1;class#MessageConstructor#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/TestBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="23" column="64" lean-forward="true" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#showTestText#0;class#TestBot#0" expanded="false" />
-            <element signature="method#showTestReplyKeyboard#0;class#TestBot#0" expanded="false" />
-            <element signature="e#2542#2550#0" expanded="true" />
-            <element signature="e#2996#3004#0" expanded="true" />
+            <element signature="method#getKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
+            <element signature="method#setButtonsInRow#0;class#ReplyKeyboardConstructor#0" expanded="false" />
+            <element signature="method#AddContactRequestInKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
+            <element signature="method#AddLocationRequestInKeyboard#0;class#ReplyKeyboardConstructor#0" expanded="false" />
           </folding>
         </state>
       </provider>
