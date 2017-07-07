@@ -86,8 +86,13 @@ public class TestBot extends TelegramLongPollingBot {
         ArrayList<String> buttons = new ArrayList<String>();
         buttons.add("/menu");
         buttons.add("/start");
+        buttons.add("/нодгшже");
+        buttons.add("/ваповап");
+        buttons.add("/ековапо");
 
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardConstructor().getKeyboard(buttons, KeyboardPattern.TWO_BUTTON_AT_ROW);
+        ReplyKeyboardMarkup replyKeyboardMarkup =  ReplyKeyboardConstructor.getKeyboard(buttons, KeyboardPattern.TWO_BUTTON_AT_ROW);
+        replyKeyboardMarkup = ReplyKeyboardConstructor.addContactRequestInKeyboard(replyKeyboardMarkup, "/ваповап");
+
         sendMessage(new MessageConstructor().getSendMessage("keyboard show", chatId, null, replyKeyboardMarkup));
     }
 

@@ -14,24 +14,24 @@ import java.util.List;
  */
 public class InlineKeyboardConstructor {
     //returns keyboard with one button at row (buttonText = callBackData)
-    public InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons) {
+    public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons) {
         return getKeyboard(buttons, buttons, KeyboardPattern.ONE_BUTTON_AT_ROW);
     }
 
     //returns keyboard with one button at row and callBackData != buttonText)
-    public InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, ArrayList<String> callBackData) {
+    public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, ArrayList<String> callBackData) {
         return getKeyboard(buttons, callBackData, KeyboardPattern.ONE_BUTTON_AT_ROW);
     }
 
     //returns keyboard with buttons at row by pattern (buttonText = callBackData)
-    public InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, KeyboardPattern pattern) {
+    public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, KeyboardPattern pattern) {
         ArrayList<String> callBackData = new ArrayList<String>();
         callBackData.addAll(buttons);
         return getKeyboard(buttons, callBackData, pattern);
     }
 
     //returns keyboard with button at row by pattern and custom callBackData
-    public InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, ArrayList<String> callBackData, KeyboardPattern pattern) {
+    public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, ArrayList<String> callBackData, KeyboardPattern pattern) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rows = new ArrayList<List<InlineKeyboardButton>>();
         while (buttons.size() != 0){
@@ -52,7 +52,7 @@ public class InlineKeyboardConstructor {
     }
 
     //returns call back data without firs line by pattern
-    public ArrayList<String> removeSetCallBackData(ArrayList<String> callBackData, KeyboardPattern pattern) {
+    public static ArrayList<String> removeSetCallBackData(ArrayList<String> callBackData, KeyboardPattern pattern) {
         for (int i = 0; i < ButtonTool.getButtonsAtLine(pattern); i++) {
             callBackData.remove(0);
         }
@@ -60,7 +60,7 @@ public class InlineKeyboardConstructor {
     }
 
     //returns pattern by count of buttons in line
-    public KeyboardPattern getPatternByButtonsAtLine(int buttonsAtLine) {
+    public static KeyboardPattern getPatternByButtonsAtLine(int buttonsAtLine) {
         switch (buttonsAtLine) {
             case 1:
                 return KeyboardPattern.ONE_BUTTON_AT_ROW;
@@ -74,7 +74,7 @@ public class InlineKeyboardConstructor {
     }
 
     //Constructing row
-    public List<InlineKeyboardButton> setButtonsInRow(ArrayList<String> buttons, ArrayList<String> callBackData, KeyboardPattern pattern) {
+    public static List<InlineKeyboardButton> setButtonsInRow(ArrayList<String> buttons, ArrayList<String> callBackData, KeyboardPattern pattern) {
         List<InlineKeyboardButton> row = new ArrayList<InlineKeyboardButton>();
         for (int i = 0; i < ButtonTool.getButtonsAtLine(pattern); i++) {
             row.add(new InlineKeyboardButton()
@@ -85,11 +85,11 @@ public class InlineKeyboardConstructor {
     }
 
     //uses when tou don't know pattern const
-    public InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, int buttonsAtRow) {
+    public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, int buttonsAtRow) {
         return getKeyboard(buttons, buttons, getPatternByButtonsAtLine(buttonsAtRow));
     }
 
-    public InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, ArrayList<String> callBackData, int buttonsAtRow) {
+    public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons, ArrayList<String> callBackData, int buttonsAtRow) {
         return getKeyboard(buttons, callBackData, getPatternByButtonsAtLine(buttonsAtRow));
     }
 

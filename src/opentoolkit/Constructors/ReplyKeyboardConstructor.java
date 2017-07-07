@@ -15,25 +15,32 @@ import java.util.List;
  */
 public class ReplyKeyboardConstructor {
     //returns keyboard with one button at row
-    public ReplyKeyboardMarkup getKeyboard(ArrayList<String> buttons) {
+    public static ReplyKeyboardMarkup getKeyboard(ArrayList<String> buttons) {
         return getKeyboard(buttons, KeyboardPattern.ONE_BUTTON_AT_ROW);
     }
 
     //returns keyboard with custom count of buttons st row by pattern
-    public ReplyKeyboardMarkup getKeyboard(ArrayList<String> buttons, KeyboardPattern pattern) {
+    public static ReplyKeyboardMarkup getKeyboard(ArrayList<String> buttons, KeyboardPattern pattern) {
         ReplyKeyboardMarkup keyboard = new ReplyKeyboardMarkup();
         List<KeyboardRow> rows = new ArrayList<KeyboardRow>();
 
-        for (int i = 0; i < ButtonTool.completeLines(buttons.size(), pattern); i++) {
-            rows.add(setButtonsInRow(buttons, pattern));
+        while (buttons.size() != 0) {
+            KeyboardRow row = new KeyboardRow();
+            for (int i = 0; i < ButtonTool.getButtonsAtLine(pattern); i++) {
+                if (buttons.size() != 0) {
+                    row.add(new KeyboardButton()
+                            .setText(buttons.get(0)));
+                    buttons.remove(0);
+                }
+            }
+            rows.add(row);
         }
-
         keyboard.setKeyboard(rows);
         return keyboard;
     }
 
     //Constructing row
-    public KeyboardRow setButtonsInRow(ArrayList<String> buttons, KeyboardPattern pattern) {
+    public static KeyboardRow setButtonsInRow(ArrayList<String> buttons, KeyboardPattern pattern) {
         KeyboardRow row = new KeyboardRow();
         for (int i = 0; i < ButtonTool.getButtonsAtLine(pattern); i++) {
             row.add(new KeyboardButton()
@@ -45,7 +52,7 @@ public class ReplyKeyboardConstructor {
     }
 
     //updating keyboard: sets in Button (row : posInRow) request contact
-    public ReplyKeyboardMarkup AddContactRequestInKeyboard(ReplyKeyboardMarkup keyboard, int row, int posInRow){
+    public static ReplyKeyboardMarkup addContactRequestInKeyboard(ReplyKeyboardMarkup keyboard, int row, int posInRow) {
         List<KeyboardRow> rows = keyboard.getKeyboard();
         KeyboardRow selectedRow = rows.get(row);
         KeyboardButton button = selectedRow.get(posInRow);
@@ -58,7 +65,7 @@ public class ReplyKeyboardConstructor {
     }
 
     //updating keyboard: sets in Button (row : posInRow) request location
-    public ReplyKeyboardMarkup AddLocationRequestInKeyboard(ReplyKeyboardMarkup keyboard, int row, int posInRow){
+    public static ReplyKeyboardMarkup addLocationRequestInKeyboard(ReplyKeyboardMarkup keyboard, int row, int posInRow) {
         List<KeyboardRow> rows = keyboard.getKeyboard();
         KeyboardRow selectedRow = rows.get(row);
         KeyboardButton button = selectedRow.get(posInRow);
@@ -66,6 +73,44 @@ public class ReplyKeyboardConstructor {
         button.setRequestLocation(true);
         selectedRow.set(posInRow, button);
         rows.set(row, selectedRow);
+
+        return keyboard;
+    }
+
+    public static ReplyKeyboardMarkup addContactRequestInKeyboard(ReplyKeyboardMarkup keyboard, String buttonText) {
+        List<KeyboardRow> rows = keyboard.getKeyboard();
+        List<KeyboardRow> newRows = new ArrayList<KeyboardRow>();
+
+        for (KeyboardRow row : rows) {
+            KeyboardRow newRow = new KeyboardRow();
+            for (KeyboardButton button : row) {
+                if (button.getText().equals(buttonText)) {
+                    button.setRequestContact(true);
+                }
+                newRow.add(button);
+            }
+            newRows.add(newRow);
+        }
+        keyboard.setKeyboard(newRows);
+
+        return keyboard;
+    }
+
+    public static ReplyKeyboardMarkup addLocationRequestInKeyboard(ReplyKeyboardMarkup keyboard, String buttonText) {
+        List<KeyboardRow> rows = keyboard.getKeyboard();
+        List<KeyboardRow> newRows = new ArrayList<KeyboardRow>();
+
+        for (KeyboardRow row : rows) {
+            KeyboardRow newRow = new KeyboardRow();
+            for (KeyboardButton button : row) {
+                if (button.getText().equals(buttonText)) {
+                    button.setRequestLocation(true);
+                }
+                newRow.add(button);
+            }
+            newRows.add(newRow);
+        }
+        keyboard.setKeyboard(newRows);
 
         return keyboard;
     }

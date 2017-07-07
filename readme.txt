@@ -4,7 +4,7 @@ author Valentin "Vanderkast" Mazurov
 
 This toolkit was created for help developers in TelegramBots' work.
 
-Current version : pre-alfa 0.02;
+Current version : pre-alfa 0.02 bug fix;
 
 How to use it:
 	1) copy package opentoolkit into your project
@@ -12,6 +12,10 @@ How to use it:
 
 
 Version's updates logs:
+v0.02 bug fix:
+	-Added new method for location and contact request in ReplyKeyboardConstructor (check into Constructors' readme)
+	-Fixed ReplyKeyboardConstructor
+
 v0.02:
 	-Pre-alfa version.
 	-Added: + ChartConstructor;
