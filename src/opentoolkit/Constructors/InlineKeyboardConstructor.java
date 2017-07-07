@@ -15,7 +15,9 @@ import java.util.List;
 public class InlineKeyboardConstructor {
     //returns keyboard with one button at row (buttonText = callBackData)
     public static InlineKeyboardMarkup getKeyboard(ArrayList<String> buttons) {
-        return getKeyboard(buttons, buttons, KeyboardPattern.ONE_BUTTON_AT_ROW);
+        ArrayList<String> callBackData = new ArrayList<String>();
+        callBackData.addAll(buttons);
+        return getKeyboard(buttons, callBackData, KeyboardPattern.ONE_BUTTON_AT_ROW);
     }
 
     //returns keyboard with one button at row and callBackData != buttonText)
