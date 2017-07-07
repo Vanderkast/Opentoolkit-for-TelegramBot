@@ -4,7 +4,7 @@ author Valentin "Vanderkast" Mazurov
 
 This toolkit was created for help developers in TelegramBots' work.
 
-Current version : pre-alfa 0.01;
+Current version : pre-alfa 0.02;
 
 How to use it:
 	1) copy package opentoolkit into your project
@@ -12,6 +12,14 @@ How to use it:
 
 
 Version's updates logs:
+v0.02:
+	-Pre-alfa version.
+	-Added: + ChartConstructor;
+	            + PieChartConstructor;
+	-BUG FIX:
+		Were refactored KeyboardConstructors
+		Now InlineKeyboardConstructor works normal with strange count of buttons	
+
 
 v0.01: 
 	-Pre-alfa version.

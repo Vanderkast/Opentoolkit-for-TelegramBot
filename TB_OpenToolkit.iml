@@ -11,11 +11,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/Entity" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/opentoolkit" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Charts" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/opentoolkit/Test" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="telegrambots-3.0.1-jar-with-dependencies (1)" level="project" />
+    <orderEntry type="library" name="xchart-3.4.0" level="application" />
   </component>
 </module>
