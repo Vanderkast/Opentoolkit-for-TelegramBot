@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -9,9 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/opentoolkit/SQL" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/Entity" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Adapters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/opentoolkit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/opentoolkit/Test" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>

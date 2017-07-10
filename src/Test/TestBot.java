@@ -2,6 +2,8 @@
  * Created by Vanderkast on 11.06.2017.
  */
 
+import Charts.ChartConstructor;
+import Charts.PieChartConstructor;
 import Constructors.InlineKeyboardConstructor;
 import Constructors.MessageConstructor;
 import Constructors.ReplyKeyboardConstructor;
@@ -152,8 +154,6 @@ public class TestBot extends TelegramLongPollingBot {
             File file = new File(pieChart.getPieChartConstructed());
             fileInputStream = new FileInputStream(file + ".jpg");
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
             e.printStackTrace();
         }
         sendPhoto(new SendPhoto()
