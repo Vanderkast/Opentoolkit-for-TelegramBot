@@ -1,6 +1,6 @@
-package Constructors;
+package opentoolkit.Constructors;
 
-import patterns.KeyboardPattern;
+import opentoolkit.patterns.KeyboardPattern;
 
 import java.util.ArrayList;
 

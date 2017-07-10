@@ -1,9 +1,9 @@
-package Constructors;
+package opentoolkit.Constructors;
 
 import org.telegram.telegrambots.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.api.objects.replykeyboard.buttons.KeyboardRow;
-import patterns.KeyboardPattern;
+import opentoolkit.patterns.KeyboardPattern;
 
 import java.util.ArrayList;
 import java.util.List;

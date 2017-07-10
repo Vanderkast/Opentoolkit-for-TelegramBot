@@ -6,7 +6,30 @@
 
     <groupId>TB_OpenToolkit</groupId>
     <artifactId>tb_opentoolkit</artifactId>
-    <version>0.03 pre-alfa</version>
+    <version>0.03 pre-alfa refactored</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.22.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>1.22.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-sheets</artifactId>
+            <version>v4-rev478-1.22.0</version>
+        </dependency>
+
+    </dependencies>
+
+
 
     <build>
         <plugins>

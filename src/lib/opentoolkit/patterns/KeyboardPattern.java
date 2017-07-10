@@ -1,4 +1,4 @@
-package patterns;
+package opentoolkit.patterns;
 
 /**
  * Created by Vanderkast on 04.07.2017.
