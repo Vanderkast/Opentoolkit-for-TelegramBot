@@ -103,7 +103,7 @@ public class TestBot extends TelegramLongPollingBot {
         buttons.add("/showTestChart");
         buttons.add("/pieChart");
 
-        InlineKeyboardMarkup inlineKeyboard = new InlineKeyboardConstructor().getKeyboard(buttons, KeyboardPattern.THREE_BUTTON_AT_ROW);
+        InlineKeyboardMarkup inlineKeyboard = InlineKeyboardConstructor.getKeyboard(buttons);
         sendMessage(new MessageConstructor().getSendMessage("this is *inline* menu message", chatId, "Markdown", inlineKeyboard));
     }
 
