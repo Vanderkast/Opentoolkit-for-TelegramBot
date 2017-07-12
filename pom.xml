@@ -30,6 +30,12 @@
             <artifactId>google-api-services-sheets</artifactId>
             <version>v4-rev478-1.22.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.knowm.xchart/xchart -->
+        <dependency>
+            <groupId>org.knowm.xchart</groupId>
+            <artifactId>xchart</artifactId>
+            <version>3.4.0</version>
+        </dependency>
 
     </dependencies>
     <build>
