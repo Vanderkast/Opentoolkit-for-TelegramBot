@@ -12,6 +12,9 @@ How to use it:
 
 
 Version's updates logs:
+v0.05:
+	-Now xchart constructor is another project you can see it there: https://github.com/Vanderkast/XCharts_Toolkit
+
 v0.02 bug fix:
 	-Added new method for location and contact request in ReplyKeyboardConstructor (check into Constructors' readme)
 	-Fixed ReplyKeyboardConstructor
