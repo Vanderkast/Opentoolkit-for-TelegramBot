@@ -2,14 +2,11 @@
  * Created by Vanderkast on 11.06.2017.
  */
 
-import Charts.ChartConstructor;
-import Charts.PieChartConstructor;
 import Constructors.InlineKeyboardConstructor;
 import Constructors.MessageConstructor;
 import Constructors.ReplyKeyboardConstructor;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
-import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.api.objects.replykeyboard.InlineKeyboardMarkup;
@@ -18,10 +15,6 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 import patterns.KeyboardPattern;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class TestBot extends TelegramLongPollingBot {
@@ -67,12 +60,6 @@ public class TestBot extends TelegramLongPollingBot {
             if (messageText.equals("/menu")) {
                 showTestMenu(chatId);
             }
-            if (messageText.equals("/showTestChart")) {
-                sendPhotoOfChart(chatId);
-            }
-            if(messageText.equals("/pieChart")){
-                sendPieChart(chatId);
-            }
         } catch (TelegramApiException e) {
             e.printStackTrace();
             System.out.println("telegramApiException was catched");
@@ -92,7 +79,7 @@ public class TestBot extends TelegramLongPollingBot {
         buttons.add("/ваповап");
         buttons.add("/ековапо");
 
-        ReplyKeyboardMarkup replyKeyboardMarkup =  ReplyKeyboardConstructor.getKeyboard(buttons, KeyboardPattern.TWO_BUTTON_AT_ROW);
+        ReplyKeyboardMarkup replyKeyboardMarkup = ReplyKeyboardConstructor.getKeyboard(buttons, KeyboardPattern.TWO_BUTTON_AT_ROW);
         replyKeyboardMarkup = ReplyKeyboardConstructor.addContactRequestInKeyboard(replyKeyboardMarkup, "/ваповап");
 
         sendMessage(new MessageConstructor().getSendMessage("keyboard show", chatId, null, replyKeyboardMarkup));
@@ -109,55 +96,4 @@ public class TestBot extends TelegramLongPollingBot {
         sendMessage(new MessageConstructor().getSendMessage("this is *inline* menu message", chatId, "Markdown", inlineKeyboard));
     }
 
-    private void sendPhotoOfChart(long chatId) throws TelegramApiException {
-        ArrayList<Integer> xData = new ArrayList<Integer>();
-        xData.add(1);
-        xData.add(2);
-        xData.add(3);
-
-        ArrayList<Integer> yData = new ArrayList<Integer>();
-        yData.add(3);
-        yData.add(4);
-        yData.add(7);
-        ChartConstructor chart = new ChartConstructor("E:/Unity/TB_OpenToolkit", "X", xData, "Y", yData, "test chart", 500, 500);
-
-
-        FileInputStream fileInputStream = null;
-        try {
-            File file = new File(chart.getChartConstructed());
-            fileInputStream = new FileInputStream(file + ".jpg");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        sendPhoto(new SendPhoto()
-                .setChatId(chatId)
-                .setNewPhoto("photo", fileInputStream));
-    }
-
-    private void sendPieChart(long chatId) throws  TelegramApiException{
-        ArrayList<Integer> values = new ArrayList<Integer>();
-        values.add(15);
-        values.add(7);
-        values.add(9);
-
-        ArrayList<String> series = new ArrayList<String>();
-        series.add("hello");
-        series.add("this");
-        series.add("is pieChart");
-
-        PieChartConstructor pieChart = new PieChartConstructor("E:/Unity/TB_OpenToolkit", "pie", series, values, 500, 500);
-        FileInputStream fileInputStream = null;
-        try {
-            File file = new File(pieChart.getPieChartConstructed());
-            fileInputStream = new FileInputStream(file + ".jpg");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        sendPhoto(new SendPhoto()
-                .setChatId(chatId)
-                .setNewPhoto("photo", fileInputStream));
-    }
 }
