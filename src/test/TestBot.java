@@ -2,9 +2,7 @@
  * Created by Vanderkast on 11.06.2017.
  */
 
-import Constructors.InlineKeyboardConstructor;
-import Constructors.MessageConstructor;
-import Constructors.ReplyKeyboardConstructor;
+
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.api.objects.Message;
@@ -13,7 +11,6 @@ import org.telegram.telegrambots.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
-import patterns.KeyboardPattern;
 
 import java.util.ArrayList;
 

@@ -34,6 +34,6 @@ v0.01:
 		 + InlineKeyboardConstructor;
 		 + ReplyKeyboardConstructor;
 		 
-		 + TestBot for testing the toolkit in Telegram;
+		 + test.TestBot for testing the toolkit in Telegram;
 
 	

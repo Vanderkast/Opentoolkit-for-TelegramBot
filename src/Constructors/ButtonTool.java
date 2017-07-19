@@ -1,6 +1,3 @@
-package Constructors;
-
-import patterns.KeyboardPattern;
 
 import java.util.ArrayList;
 

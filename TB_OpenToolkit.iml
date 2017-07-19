@@ -10,11 +10,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/opentoolkit/SQL" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/Entity" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Adapters" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lib" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/opentoolkit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/opentoolkit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Constructors" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/patterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/src/opentoolkit/Test" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
